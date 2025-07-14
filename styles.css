@@ -30,7 +30,7 @@ body {
 
 .navegacao {
   position: fixed;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(17, 17, 20, 0.459);
   width: 100%;
   z-index: 100;
   padding: 1.5rem;
