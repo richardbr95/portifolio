@@ -119,36 +119,6 @@
       </div>
     </section>
 
-    <section id="contato" class="contatos">
-      <h2 class="contatos-titulo">Entre em Contato</h2>
-      <form
-        class="formulario-contato"
-        id="formulario"
-        onsubmit="enviarWhats(event)"
-      >
-        <div class="grupo-form">
-          <input
-            type="text"
-            name=""
-            id="nome"
-            placeholder="Nome"
-            class="campo-form"
-          />
-        </div>
-        <div class="grupo-form">
-          <textarea
-            style="resize: none"
-            name=""
-            id="mensagem"
-            rows="6"
-            placeholder="Digite sua Mensagem"
-            class="campo-form"
-          ></textarea>
-        </div>
-        <button type="submit" class="botao-form">Enviar WhatsApp</button>
-      </form>
-    </section>
-
     <section class="Hub-Network">
       <a
         href="https://www.instagram.com/richadoficial/"
@@ -169,25 +139,5 @@
         ><i class="fa-brands fa-whatsapp"></i>
       </a>
     </section>
-
-    <script>
-      function enviarWhats(event) {
-        event.preventDefault();
-
-        const nome = document.getElementById("nome").value;
-        const mensagem = document.getElementById("mensagem").value;
-        const telefone = "5519993300164";
-
-        const texto = `Olá! Me chamo ${nome} , ${mensagem}`;
-        const msgFormatada = encodeURIComponent(texto);
-
-        const url = `https://whatsa.me/${telefone}/?t=${msgFormatada}`;
-
-        window.open(url, "blank");
-
-        nome.value = "";
-        mensagem.value = "";
-      }
-    </script>
   </body>
 </html>
